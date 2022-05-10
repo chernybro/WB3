@@ -4,8 +4,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.chernybro.wb3.databinding.ActivityMainBinding
-import com.chernybro.wb3.telegram.ConstraintTelegramFragment
-import timber.log.Timber
 
 
 // Q: отличия жизненного цикла фрагмента от жизненного цикла активити,
@@ -27,21 +25,28 @@ class MainActivity : AppCompatActivity(), BaseRouter {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
-        binding.apply {
-            btnTelegram.setOnClickListener { }
-            btnTelegramConstraint.setOnClickListener { routeTo(ConstraintTelegramFragment.newInstance()) }
-
-        }
+        replaceTo(ChooseFragment.newInstance())
 
     }
 
 
-    override fun routeTo(fragment: Fragment) {
+    override fun replaceTo(fragment: Fragment) {
         supportFragmentManager
             .beginTransaction()
             .replace(R.id.container, fragment)
+            .addToBackStack(fragment.tag)
+            .commit()
+    }
+
+    override fun add(fragment: Fragment) {
+        supportFragmentManager
+            .beginTransaction()
+            .add(R.id.container, fragment)
+            .addToBackStack(fragment.tag)
             .commit()
     }
 

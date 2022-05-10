@@ -8,16 +8,20 @@
         <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/drawable/ic_facebook_logo.xml" value="0.1585" />
         <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/drawable/ic_ruler.xml" value="0.1585" />
         <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/drawable/ic_ruler_svgrepo_com.xml" value="0.1585" />
-        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_calculator.xml" value="0.264" />
         <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_calculator_constraint.xml" value="0.2" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_choose.xml" value="0.12604263206672844" />
         <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_first.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_login_constraint.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_player.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_player.xml" value="0.2" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_player_constraint.xml" value="0.264" />
         <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_telegram.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_telegram_constraint.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_telegram_constraint.xml" value="0.2" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/item_player.xml" value="0.17101325352714836" />
         <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/menu/menu.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/menu/player_menu.xml" value="0.17101325352714836" />
       </map>
     </option>
   </component>
