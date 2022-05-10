@@ -18,7 +18,7 @@ class ConstraintPlayerFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
-        return inflater.inflate(R.layout.fragment_login, container, false)
+        return inflater.inflate(R.layout.fragment_player_constraint, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

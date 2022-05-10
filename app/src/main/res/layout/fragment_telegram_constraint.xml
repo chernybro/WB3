@@ -7,6 +7,7 @@
     tools:context=".telegram.ConstraintTelegramFragment">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,11 +29,12 @@
                 app:layout_collapseMode="parallax"
                 app:layout_collapseParallaxMultiplier="0.7" />
 
+
             <com.google.android.material.appbar.MaterialToolbar
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                app:menu="@menu/menu"
+                app:menu="@menu/telegram"
                 app:navigationIcon="?attr/homeAsUpIndicator"
                 app:navigationIconTint="@color/white" />
         </com.google.android.material.appbar.CollapsingToolbarLayout>
@@ -41,7 +43,254 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@android:color/holo_blue_bright"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+7 927 333 44 55"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/tv_account"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tv_change_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to change phone number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@id/tv_number"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_change_number"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\@chernybro"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/tv_change_number"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tv_username_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@id/tv_username"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_username_hint"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm fine. Bla bla bla bla bla..."
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/tv_username_hint"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tv_status_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bio"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@id/tv_status"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_status_hint"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <TextView
+                android:id="@+id/tv_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@android:color/holo_blue_bright"
+                app:layout_constraintTop_toBottomOf="@id/tv_status_hint"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp" />
+
+            <ImageView
+                android:id="@+id/iv_notification"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/ic_baseline_notifications_none_24"
+                app:layout_constraintTop_toBottomOf="@id/tv_settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/iv_notification"
+                android:text="Notifications and Sounds"
+                app:layout_constraintTop_toTopOf="@id/iv_notification"
+                app:layout_constraintBottom_toBottomOf="@id/iv_notification"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+            <ImageView
+                android:id="@+id/iv_security"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/ic_baseline_lock_24"
+                app:layout_constraintTop_toBottomOf="@id/iv_notification" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/iv_security"
+                android:text="Privacy and Security"
+                app:layout_constraintTop_toTopOf="@id/iv_security"
+                app:layout_constraintBottom_toBottomOf="@id/iv_security"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+
+            <ImageView
+                android:id="@+id/iv_storage"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/ic_baseline_storage_24"
+                app:layout_constraintTop_toBottomOf="@id/iv_security" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/iv_storage"
+                android:text="Data and Storage"
+                app:layout_constraintTop_toTopOf="@id/iv_storage"
+                app:layout_constraintBottom_toBottomOf="@id/iv_storage"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+            <ImageView
+                android:id="@+id/iv_chat_settings"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/ic_baseline_chat_24"
+                app:layout_constraintTop_toBottomOf="@id/iv_storage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/iv_chat_settings"
+                android:text="Chat Settings"
+                app:layout_constraintTop_toTopOf="@id/iv_chat_settings"
+                app:layout_constraintBottom_toBottomOf="@id/iv_chat_settings"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+            <ImageView
+                android:id="@+id/iv_chat_folders"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/ic_baseline_folder_24"
+                app:layout_constraintTop_toBottomOf="@id/iv_chat_settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/iv_chat_folders"
+                android:text="Chat Folders"
+                app:layout_constraintTop_toTopOf="@id/iv_chat_folders"
+                app:layout_constraintBottom_toBottomOf="@id/iv_chat_folders"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+
+            <ImageView
+                android:id="@+id/iv_devices"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/ic_baseline_devices_24"
+                app:layout_constraintTop_toBottomOf="@id/iv_chat_folders" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/iv_devices"
+                android:text="Devices"
+                app:layout_constraintTop_toTopOf="@id/iv_devices"
+                app:layout_constraintBottom_toBottomOf="@id/iv_devices"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.core.widget.NestedScrollView>

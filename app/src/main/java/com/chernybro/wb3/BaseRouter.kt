@@ -4,5 +4,7 @@ import androidx.fragment.app.Fragment
 
 interface BaseRouter {
 
-    fun routeTo(fragment: Fragment)
+    fun replaceTo(fragment: Fragment)
+
+    fun add(fragment: Fragment)
 }
