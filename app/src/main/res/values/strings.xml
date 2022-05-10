@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WB3</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="action_more">More</string>
+    <string name="action_search">Search</string>
+    <string name="action_qrcode">QR-code</string>
+</resources>

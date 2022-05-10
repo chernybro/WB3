@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.1585" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/drawable/ic_baseline_calculate_24.xml" value="0.1585" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/drawable/ic_facebook_logo.xml" value="0.1585" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/drawable/ic_ruler.xml" value="0.1585" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/drawable/ic_ruler_svgrepo_com.xml" value="0.1585" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_calculator.xml" value="0.264" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_calculator_constraint.xml" value="0.2" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_first.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_login_constraint.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_player.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_telegram.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/layout/fragment_telegram_constraint.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/Cherny/AndroidStudioProjects/WB3/app/src/main/res/menu/menu.xml" value="0.20863616930312098" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
